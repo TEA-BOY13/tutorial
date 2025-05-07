@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript basics tutorials for beginners</title>
+    <style>
+        body { 
+              font-family: Arial, sans-serif;
+              /* text-align: center;  */
+              background-color: lightblue;
+              }
+              h4{
+                margin-top: 0;
+                text-align: center;
+                text-transform: capitalize;
+              }
+        #container {
+              display: flex;
+              flex-direction: column; 
+              align-items: center; 
+              }
+        video {
+               width: 360px;
+               height: 360px; 
+               margin-bottom: 20px; 
+               }
+        #tutorials-list { 
+                height: 200px;
+               display: flex; 
+               flex-direction: column;
+               overflow-y: scroll; 
+               
+               }
+        #tutorials-item { 
+               cursor: pointer; 
+               padding: 10px; 
+               border: none; 
+               margin: 5px; 
+               border-radius: 10px;
+               font-size: medium;
+               font-weight: bold;
+               font-family: 'Times New Roman', Times, serif;
+               }
+        #tutorials-item:hover { 
+               background-color: #f0f0f0; 
+               }
+        button{
+              background-color: lime;
+              border-radius: 8px;
+              border: none;
+              font-size: small;
+              font-weight: bold;
+              font-family: 'Times New Roman', Times, serif;
+              padding: 5px;
+              margin: 10px;
+              text-align: left;
+              margin-left: 1%;
+               }
+         button:hover{
+              background-color: #f0f0f0;
+               }
+               a{
+                text-decoration: none;
+                margin: auto;
+                font-size: medium;
+                font-weight: bold;
+                color: red;
+               }
+               
+    </style>
+</head>
+<body>
+    <h4>basics foundations of  JavaScript</h4>
+    <a href="tutorial.html"><button type="button">-BACK-TO-COURSES</button></a>
+
+    <div id="container">
+        <video id="videoPlayer" controls>
+            <source src="CSS1.mp4" type="video/mp4">
+         
+        </video>
+        <h4>scroll down to see your tutorials list</h4>
+        <div id="tutorials-list">
+            <div id="tutorials-item" onclick="play('CSS1.mp4')">CSS_tutorial 1</div>
+            <div id="tutorials-item" onclick="play('CSS2.mp4')">CSS_tutorial 2</div>
+            <div id="tutorials-item" onclick="play('CSS3.mp4')">CSS_tutorial 3</div>
+            <div id="tutorials-item" onclick="play('CSS4.mp4')">CSS_tutorial 4</div>
+            <div id="tutorials-item" onclick="play('CSS5.mp4')">CSS_tutorial 5</div>
+            <div id="tutorials-item" onclick="play('CSS6.mp4')">CSS_tutorial 6</div>
+            <div id="tutorials-item" onclick="play('CSS7.mp4')">CSS_tutorial 7</div>
+            <div id="tutorials-item" onclick="play('CSS8.mp4')">CSS_tutorial 8</div>
+            <div id="tutorials-item" onclick="play('CSS9.mp4')">CSS_tutorial 9</div>
+            <div id="tutorials-item" onclick="play('CSS10.mp4')">CSS_tutorial 10</div>
+            <div id="tutorials-item" onclick="play('CSS11.mp4')">CSS_tutorial 11</div>
+            <div id="tutorials-item" onclick="play('CSS12.mp4')">CSS_tutorial 12</div>
+            <a href="#" onclick="salert()">MORE...</a>
+        </div>
+    </div>
+
+    <script>
+        function play(videoSrc) {
+            let videoPlayer = document.getElementById("videoPlayer");
+            videoPlayer.src = videoSrc;
+            videoPlayer.play();
+           // document.getElementById('tutorials-item').style.backgroundColor = "#ccc";
+        }
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     <script>
+         function salert(){
+         Swal.fire({
+               icon:'warning',
+               title:'FEATURES',
+               text:'more tutorials are coming soon',
+               footer:'&copyTea-Boy13 2025'
+           });
+         }
+
+</script>
+</body>
+</html>

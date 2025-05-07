@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+ /* new line */
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+  }
+  
+  .sidenav a:hover,
+  .offcanvas a:focus {
+    color: #f1f1f1;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+  }
+  #a1{
+        background-color: aquamarine;
+    }
+    a:hover{
+    box-shadow: 3px 4px 3px aqua;
+    }
+    a{
+        text-decoration: none;
+        color: #111;
+    }
+  #logo{
+     height: 80px;
+     width: 120px;
+     margin: auto;
+     margin-top: -50px;
+     margin-left: 50px;
+     border-radius: 50px;
+     box-shadow: 3px 4px 3px aqua;
+  }
+  #fhr{
+    box-shadow: 10px 10px 8px;
+    margin-top: 10%;
+  }
+  footer{
+    color: aqua;
+    font-size: medium;
+    font-weight: ligther;
+    font-style: italic;
+    bottom: 0%;
+    margin-left: 50px;
+  }
+#dashboard1{
+    margin: auto;
+    height: 100px;
+    width: 100%;
+    padding: 0%;
+    background-color: lightblue;
+}
+#slide{
+    height: 100px;
+    width: auto;
+    margin-bottom: 2%;
+    box-shadow: 2px 1px 2px;
+
+}
+#img{
+    height: 100px;
+    width: 150px;
+
+}
+#container1{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#container2{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8{
+    height: 180px;
+    width: 250px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 3px 3px 3px;
+}
+#dlogo{
+    height: 140px;
+    width: 250px;
+
+}
+h2{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+</style>
+
+<body>
+    <div id="dashboard">
+        <div id="mySidenav" class="sidenav">
+            <img src="logo.jpg" alter="image not foundn!" id="logo">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="index.html" id="a0">Home</a>
+              <a href="tutorial.html" id="a1">Tutorial</a>
+              <a href="materials.html" id="a2">Materials</a>
+              <a href="#" id="a5" onclick="ppq()">Pass_questions</a>
+              <a href="#" id="a4" onclick="salert()">University_Map</a>
+              <a href="about.html" id="a6">About_Me</a>
+
+              <hr id="fhr">
+              <footer>
+              &copyTea-boy13 2025
+              </footer>
+            </div>
+            <span style="font-size:30px;cursor:pointer; float: left; margin-top: 0%;" onclick="openNav()">☰ </span> 
+
+    <div id="dashboard1">
+        <img src="logo.jpg" alt="image not founds" id="img">
+        <p id="pname"></p>
+
+    </div>
+    <div id="slide">
+        <h2>CHOOSE YOUR CAREER PART WISELY</h2>
+    </div>
+    <h2>This Are The Available Basics Tutorials of  Programming Languages For <br>COMPUTER SCIENCE/ I.T Students.</h2>
+    <div id="container1">
+        <a href="html.html">
+            <div id="d1">
+                <img src="html.jpg" alt="image not fond!" id="dlogo">
+            <h2 id="foot">HTML</h2>
+        </div>
+        </a>
+        
+        <a href="css.html">
+        <div id="d2">
+            <img src="css.jpg" alt="image not fond!" id="dlogo">
+            <h2 id="foot">CSS</h2>
+        </div>
+        </a>
+
+        <a href="javascript.html"><div id="d3">
+            <img src="javascript.jpg" alt="image not fond!" id="dlogo">
+            <h2 id="foot">JAVASCRIPP</h2>
+        </div>
+        </a>
+        <!-- <div id="d4">
+            <h2 id="foot">REACT.JS</h2>
+        </div> -->
+        </div>
+        <div id="container2">
+            <a href="#" onclick="newa()">
+        <div id="d5">
+            <img src="php.jpg" alt="image not fond!" id="dlogo">
+            <h2 id="foot">PHP</h2>
+        </div></a>
+
+        <a href="#" onclick="newa()">
+        <div id="d6">
+            <img src="python.jpg" alt="image not fond!" id="dlogo">
+            <h2 id="foot">PYTHON</h2>
+        </div></a>
+
+        <a href="#" onclick="newa()">
+        <div id="d7">
+            <img src="node.jpg" alt="image not fond!" id="dlogo">
+            <h2 id="foot">NODE.JS</h2>
+        </div></a>
+        <!-- <div id="d8">
+            <h2 id="foot">MANGO DB</h2>
+        </div> -->
+    </div>
+    <a href="#" onclick="newa()" style="color: red;">MORE...</a>
+
+    <script>
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+        function salert(){
+        Swal.fire({
+              icon:'warning',
+              title:'FEATURES',
+              text:'entire university map is coming soon',
+              footer:'&copyTea-boy13 2025'
+          });
+        }
+        function newa(){
+        Swal.fire({
+              icon:'warning',
+              title:'FEATURES',
+              text:'more tutorials are coming soon',
+              footer:'&copyTea-boy13 2025'
+          });
+        }
+        function ppq(){
+        Swal.fire({
+              icon:'warning',
+              title:'pass_questions',
+              text:'this action will be available soon we are currently working on it be patient.',
+              footer:'&copyTea-boy13 2025'
+          });
+        }
+    </script>
+    
+</body>
+</html>
