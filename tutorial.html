@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
+    body{
+        background-color: aliceblue;
+    }
     *{
     margin: auto;
     font-weight: bold;
@@ -87,9 +90,9 @@
     background-color: lightblue;
 }
 #slide{
-    height: 100px;
+    height: auto;
     width: auto;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
     box-shadow: 2px 1px 2px;
 
 }
@@ -112,10 +115,20 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+@media (max-width:601px){
+    #container1{
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    }
+
+}
 #d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8{
     height: 180px;
     width: 250px;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 2%;
     box-shadow: 3px 3px 3px;
 }
@@ -141,13 +154,13 @@ h2{
               <a href="index.html" id="a0">Home</a>
               <a href="tutorial.html" id="a1">Tutorial</a>
               <a href="materials.html" id="a2">Materials</a>
-              <a href="#" id="a5" onclick="ppq()">Pass_questions</a>
-              <a href="#" id="a4" onclick="salert()">University_Map</a>
+              <a href="pass_q.html" id="a5" onclick="ppq()">Pass_questions</a>
+              <a href="map.html" id="a4" onclick="salert()">University_Map</a>
               <a href="about.html" id="a6">About_Me</a>
 
               <hr id="fhr">
               <footer>
-              &copyTea-boy13 2025
+              &copyTea-boy Death_wish programmer 2025
               </footer>
             </div>
             <span style="font-size:30px;cursor:pointer; float: left; margin-top: 0%;" onclick="openNav()">☰ </span> 
@@ -179,14 +192,14 @@ h2{
         <a href="javascript.html"><div id="d3">
             <img src="javascript.jpg" alt="image not fond!" id="dlogo">
             <h2 id="foot">JAVASCRIPP</h2>
-        </div>
+         </div>
         </a>
         <!-- <div id="d4">
             <h2 id="foot">REACT.JS</h2>
-        </div> -->
         </div>
-        <div id="container2">
-            <a href="#" onclick="newa()">
+        </div>
+        <div id="container2"> -->
+            <a href="php.html" onclick="newa()">
         <div id="d5">
             <img src="php.jpg" alt="image not fond!" id="dlogo">
             <h2 id="foot">PHP</h2>
@@ -205,9 +218,11 @@ h2{
         </div></a>
         <!-- <div id="d8">
             <h2 id="foot">MANGO DB</h2>
-        </div> -->
+        </div>
+        
+         <a href="#" onclick="newa()" style="color: red;">MORE...</a> -->
     </div>
-    <a href="#" onclick="newa()" style="color: red;">MORE...</a>
+   
 
     <script>
         function openNav() {
